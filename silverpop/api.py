@@ -46,7 +46,35 @@ class API(object):
         result, success = self._submit_request(xml)
         
         return result
-    
+
+    def import_list(self, import_file, map_file, email=None, encoding=None):
+        """Calls the 'importList' API function.
+        This instructs silverpop to import the import_file into the contact list
+        using the map_file.
+
+        Optional parameters are email and encoding. If email is provided,
+        a notification of job completion will be sent.
+        """
+        xml = self._get_xml_document()
+        xml['Envelope']['Body'] = {
+            'ImportList': {
+                'MAP_FILE': map_file,
+                'SOURCE_FILE': import_file
+            }
+        }
+
+        if email:
+            xml['Envelope']['Body']['ImportList'] = {
+                'EMAIL': email
+            }
+
+        if encoding:
+            xml['Envelope']['Body']['ImportList'] = {
+                'FILE_ENCODING': encoding
+            }
+
+        pass
+
     def add_user(self, list_id, email, data={}):
         '''Adds a user to the specified list. Supports adding additional 
         attributes via passing a dictionary to the data parameter.'''

@@ -172,7 +172,7 @@ class API(object):
         # Connect to silverpop and get our response
         response = requests.post(self.url, data=xml,
                            headers={"Content-Type": "text/xml;charset=utf-8"})
-        response = ConvertXmlToDict(response.content, dict)
+        response = ConvertXmlToDict(response.content.__str__(), dict)
         response = response.get('Envelope', {}).get('Body')
         
         # Determine if the request succeeded

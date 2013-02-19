@@ -1,2 +1,83 @@
-local_test_config.py
+.production_changelog
+
+# coverage
+.coverage
+coverage.xml
+diff-coverage.*
+testresults.xml
+
+# /
+/.dir-locals.el
+/python.sh
+/*.project
+/*.pydevproject
+/.ropeproject/
+/tmp
+/.mmf_doc_read
+
+# /build/
+/build/pip-log.txt
+/build/test_geoname.pg_dump
+
+# /mmf/
+/mmf/my_settings.py
+/mmf/settings_local.py
+
+# /public/images/
+/public/images/*.db
+
+# /public/images/home/
+/public/images/home/*.db
+
+# /public/css/ - this are compiled from sass files
+/public/css/
+/public/mapping-api/
+
+* /bundle
+bundle
+
+*.orig
 *.pyc
+*.pyo
+pip-log.txt
+*.o
+*.lo
+*.la
+\#*#
+*.rej
+.*.rej
+.*~
+*~
+.#*
+*.sw[po]
+.DS_Store
+.coverage
+.project
+.buildpath
+.settings
+.svn
+tags
+.AppleDouble
+._*.png
+._*.gif
+._*.jpg
+cscope.out
+/.sass-cache
+celery/*
+*.class
+*.jar
+
+packages/data_import/fitbit/oauth_client
+packages/data_import/fitbit/python-oauth-client
+
+*.egg-info
+*.pydevproject
+.idea
+pycharm_helpers
+atlassian-ide-plugin.xml
+
+testresults.xml
+
+.metadata/
+
+public/mapping-api

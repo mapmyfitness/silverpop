@@ -1,4 +1,5 @@
 .production_changelog
+local_test_config.py
 
 # coverage
 .coverage
@@ -18,20 +19,6 @@ testresults.xml
 # /build/
 /build/pip-log.txt
 /build/test_geoname.pg_dump
-
-# /mmf/
-/mmf/my_settings.py
-/mmf/settings_local.py
-
-# /public/images/
-/public/images/*.db
-
-# /public/images/home/
-/public/images/home/*.db
-
-# /public/css/ - this are compiled from sass files
-/public/css/
-/public/mapping-api/
 
 * /bundle
 bundle
@@ -79,5 +66,3 @@ atlassian-ide-plugin.xml
 testresults.xml
 
 .metadata/
-
-public/mapping-api

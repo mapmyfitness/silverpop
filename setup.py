@@ -14,7 +14,6 @@ setup(
     author_email='thomas@yola.com',
     url='https://github.com/yola/silverpop',
     packages= ['silverpop',],
-    install_requires=[
-        'elementtree==1.2.7-20070827-preview',
+    install_requires=['elementtree==1.2.7-20070827-preview'],
     license='GPL',
 )

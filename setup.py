@@ -8,7 +8,7 @@ except ImportError:
 
 setup(
     name='silverpop',
-    version='0.0.2',
+    version='0.0.2.1',
     description='Silverpop API wrapper.',
     author='Thomas Welfley',
     author_email='thomas@yola.com',

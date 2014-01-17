@@ -66,3 +66,7 @@ atlassian-ide-plugin.xml
 testresults.xml
 
 .metadata/
+
+RELEASE-VERSION
+MANIFEST
+dist
